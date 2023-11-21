@@ -1,9 +1,8 @@
-import './Login.css'
+import './css/Login.css'
 const Login = () =>{
     return(
         <div className="sub-cont">
                         <h2 className="sub-h2 h2-login">Login</h2>
-                        <p className="description">Modelo de login.</p>
                         <div className="sub-div div-login">
 
                             <div className="login-container">

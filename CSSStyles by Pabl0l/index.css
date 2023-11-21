@@ -10,6 +10,7 @@ body{
 hr{
     width: auto;
     color: #22b455;
+    box-shadow:0px 2px 8px #22b455  ;
 }
 h1{
     text-align: center;
@@ -17,23 +18,17 @@ h1{
     color:#22b455 ;
 }
 .h2{
+    display: flexbox;
     text-transform: uppercase;
     color:rgb(27, 27, 27);
-    border:1px solid #22b455;
+    box-shadow: inset 0px 0px 8px #22b455;
     border-radius:40px ;
     padding:5px;
-    width: 90%;
-    margin: auto;
-    color:#22b455 ;
-}
-.description{
-    margin: auto;
-    text-align: left;
-    justify-content:center;
     width: 80%;
-    padding:10px 0px;
+    margin: auto;
     color:#22b455 ;
 }
+
 .cont-padre{
     text-align: center;
     justify-content: center;
@@ -55,9 +50,10 @@ h1{
     margin:30px auto;
 }
 .sub-h2{
+    display: flexbox;
+    box-shadow: inset 0px 0px 8px #22b455;
     text-transform: lowercase;
     border-radius:40px ;
-    border:1px solid #22b455;
     padding:5px;
     width: 90%;
     margin: auto;
@@ -72,56 +68,3 @@ h1{
     align-items: center;
     display: flex;
 }
-/* _______________________________________________________________________________*/
-/* FORMS */
-/* .login-container{
-    border-radius: 10px;
-    margin:auto;
-    background-color: white;
-    box-shadow: 3px 3px 5px #ccc;
-    flex-direction: column;
-    width: 300px;
-    min-height: 243px;
-}
-.login-input {
-    width: 80%;
-    padding: 10px;
-    margin:10px auto;
-    border: 0.2px solid #535252;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.login-input:focus,
-.login-input:placeholder-shown {
-    padding: 5px;
-}
-
-.login-input:focus + label,
-.login-input:placeholder-shown + label {
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-.div-login-icons{
-    margin:10px auto;
-    padding: 4px;
-    width: 70%;
-    justify-content: center;
-    display: flex;
-}
-.div-login-icons a{
-    justify-content: center;
-    margin:auto 40px;
-}
-.login-icons{
-    width: 30px;
-    height: 30px;
-}
-.login-icons img{
-    width: 30px;
-    height: 30px;
-}
-
-.pform{
-    font-size: .8em;
-} */

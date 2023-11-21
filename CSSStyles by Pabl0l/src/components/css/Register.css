@@ -28,11 +28,12 @@ margin: auto 10px;
     margin: 0px 0px 0px 25%;
 }
 .mini{
-    width: 10%;
+    width: 15%;
     margin-right: 8px;
+    
 }
 .tel{
-    width: 80%;
+    width: 65%;
 }
 .div-phone-number{
     border:none;

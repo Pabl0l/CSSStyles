@@ -1,0 +1,13 @@
+.div-icons{
+    align-items: center;
+    column-gap: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.button-icon{
+    width: 80px;
+    margin: center;
+    display: block;
+    filter: invert(100%);
+}

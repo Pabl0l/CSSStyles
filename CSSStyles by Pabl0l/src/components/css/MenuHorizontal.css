@@ -1,0 +1,18 @@
+.cont-hijo-menu-horizontal{
+    min-height: fit-content;
+}
+.butt-menu-horizontal{
+    width: 50px;
+    height: fit-content;
+    margin:auto;
+}
+.div-menu-horizontal{
+    display: flex;
+    width: 340px;
+    min-height: fit-content;
+    background-color: #ccc;
+    align-items: center;
+}
+.sub-div-menu-horizontal{
+    min-height: fit-content;
+}

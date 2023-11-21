@@ -1,0 +1,19 @@
+.cont-hijo-menu-vertical{
+    min-height: fit-content;
+}
+.butt-menu-vertical{
+    width: 50px;
+    height: fit-content;
+}
+.div-menu-vertical{
+    display: flex;
+    flex-direction:column ;
+    width: fit-content;
+    min-height: fit-content;
+    background-color: #ccc;
+    align-items: center;
+}
+.sub-div-menu-vertical{
+    flex-direction:column ;
+    min-height: fit-content;
+}

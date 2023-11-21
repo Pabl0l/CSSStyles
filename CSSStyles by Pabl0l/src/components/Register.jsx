@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Register.css'
+import './css/Register.css'
 const Register = () => {
     const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -22,7 +22,6 @@ const Register = () => {
     return (
         <div className="sub-cont">
                         <h2 className="sub-h2 h2-register">Register</h2>
-                        <p className="description">Modelo de register con nombre, apellido, teléfono, correo, contraseña, género, dirección, fecha de nacimiento y comentarios.</p>
                         <div className="sub-div div-register">
                         <div className="register-container">
                                     <form onSubmit={handleSubmit}>
@@ -30,7 +29,7 @@ const Register = () => {
                                         <input className="register-input" type="text" placeholder="name" required/>
                                         <input className="register-input" type="text" placeholder="lastname" required/>
                                         <div className='register-input div-phone-number'>
-                                        <input className="register-input mini" type="tel" placeholder="+57" required/>
+                                        <input className="register-input mini" type="text" placeholder="+57" min="0" max="99" required/>        
                                         <input className="register-input tel" type="tel" placeholder="phone number" required/>
                                         </div>
                                         <input className="register-input" type="date" placeholder="birthday" required/>

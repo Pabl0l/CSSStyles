@@ -1,0 +1,13 @@
+.cont-hijo-list{
+    min-height:259px;
+    align-items: center;
+}
+.div-list{
+    min-height:fit-content ;
+    display: flex;
+    flex-direction:column; ;
+    width: 200px;
+}
+.butt-list{
+    margin-bottom: 10px;
+}
