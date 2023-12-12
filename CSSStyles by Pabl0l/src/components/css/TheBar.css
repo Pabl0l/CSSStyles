@@ -1,0 +1,45 @@
+.div-thebar{
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index:100000;
+    background: linear-gradient(to top,#22b45590,  #020204 10%);
+}
+.thebar-menu-opt{
+    background-color: transparent !important;
+    margin: auto 20px auto 0;
+}
+.div-brand-thebar{
+    color:#22b455;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.sub-div-thebar{
+    height: fit-content;
+    display: flex;
+    width: 100vw;
+}
+.div-button-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butt-thebar{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    display: flex;
+    font-size: 1.5rem;
+    background-color: #22b455d0;
+    border:none;
+    color:#020204;
+}
+.butt-thebar:hover{
+    box-shadow: 0px 0px 8px #22b455 !important;
+}
+.h4-thebar{
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+}

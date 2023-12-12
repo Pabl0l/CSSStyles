@@ -1,53 +1,22 @@
-import Forms from './components/Forms.jsx'
-import Bar from './components/Bar.jsx'
-import Card from './components/Card.jsx'
-import Landing from './components/Landing.jsx'
-import Menu from './components/Menu.jsx'
-import About from './components/About.jsx'
-import Options from './components/Options.jsx'
-import Icons from './components/Icons.jsx'
-import Buttons from './components/Buttons.jsx'
-import List from './components/List.jsx'
-import Post from './components/Post.jsx'
-import Comment from './components/Comment.jsx'
-import Footer from './components/Footer.jsx'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TheHome from './components/TheHome.jsx';
+import TheAbout from './components/TheAbout.jsx';
+import TheBar from './components/TheBar.jsx';
+import Landing from './components/Landing.jsx';
 
-const App=()=> {
-
+const App = () => {
   return (
-    <div className="app">
-    <div className="cont-padre">
-        <h1>CSSStyles by Pabl0l</h1>
-            <hr/>
-            <Forms/>
-            <hr />
-            <Buttons />
-            <hr />
-            <Icons />
-            <hr />
-            <List />
-            <hr />
-            <Menu />
-            <hr />
-            <Options />
-            <hr />
-            <Bar/>
-            <hr />
-            <Card />
-            <hr />
-            <Landing />
-            <hr />
-            <About />
-            <hr />
-            <Comment />
-            <hr />
-            <Post />
-            <hr />
-            <Footer />
-         </div>
+    <div>
+      <Router>
+        <TheBar />
+        <Routes>
+          <Route path="/" element={<TheHome />} />
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/about" element={<TheAbout />} />
+        </Routes>
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

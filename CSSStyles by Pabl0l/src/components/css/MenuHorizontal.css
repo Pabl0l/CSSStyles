@@ -8,10 +8,11 @@
 }
 .div-menu-horizontal{
     display: flex;
-    width: 340px;
-    min-height: fit-content;
-    background-color: #ccc;
+    width: fit-content;
+    min-height: 82px;
+    background-color: white;
     align-items: center;
+    border-radius:8px ;
 }
 .sub-div-menu-horizontal{
     min-height: fit-content;

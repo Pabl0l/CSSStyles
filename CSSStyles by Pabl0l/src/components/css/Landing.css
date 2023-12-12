@@ -1,0 +1,18 @@
+.butt-landing{
+    text-shadow:0px 4px #22b455;
+    width: 10dvh;
+    height: 10dvh;
+    position:absolute;
+    bottom: 0vw;
+    left: 45vw;
+    background-color: transparent;
+    border:none;
+    font-size: 3rem;
+    transform: translate(-50%, -50%) !important;
+     margin:0;
+}
+.butt-landing:hover{
+    box-shadow: none;
+    color: #22b455;
+    text-shadow: 0px 4px 28px #22b455;
+}

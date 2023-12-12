@@ -5,21 +5,27 @@
     justify-content: center;
     min-height: fit-content;
 }
-.cont-hijo-buttons{
-    min-height: fit-content;
-}
+
 .butt:hover{
-    box-shadow: 1px 2px 4px #ccc ;
+    box-shadow: 1px 2px 8px #ccc ;
+    cursor: pointer;
 }
 .butt{
     margin:10px;
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    border-radius: 8px;
+    min-width: 40px;
+    min-height: 40px;
 }
 .butt-img{
     width: 32px;
 }
+
 .butt-accept:hover{
-    box-shadow: 1px 2px 4px limegreen;
+    box-shadow: 1px 2px 8px limegreen;
 }
 .butt-cancel:hover{
-    box-shadow: 1px 2px 4px rgb(128, 0, 0) ;
+    box-shadow: 1px 2px 8px rgb(128, 0, 0) ;
 }

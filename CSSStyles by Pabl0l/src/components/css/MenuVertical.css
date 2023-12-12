@@ -10,8 +10,9 @@
     flex-direction:column ;
     width: fit-content;
     min-height: fit-content;
-    background-color: #ccc;
+    background-color: white;
     align-items: center;
+    border-radius: 8px;
 }
 .sub-div-menu-vertical{
     flex-direction:column ;

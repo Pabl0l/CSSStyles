@@ -1,0 +1,28 @@
+.div-links{
+    background-color: transparent;
+    border-radius:10px;
+    box-shadow:inset 0px 0px 4px #22b455;
+    position:absolute;
+    bottom: 0vw;
+    left: 45vw;
+    transform: translate(-50%, -50%) !important;
+    display: flex;
+}
+.butt-theabout{
+    background-size: cover;
+    width: 5vw !important;
+    height: 5vw !important;
+    margin:16px 2dvw !important;
+}
+.linkedin{
+    background-image: url('../../../public/linkedin.png');
+    
+}
+.instagram{
+    background-image: url('../../../public/instagram.png');
+    
+}
+.github{
+    background-image: url('../../../public/github.png');
+    
+}

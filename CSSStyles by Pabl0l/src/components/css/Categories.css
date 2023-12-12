@@ -1,0 +1,26 @@
+.cont-hijo-categories{
+    width: 90%;
+    
+}
+.butt-cat{
+    background-image:url('../../../public/categories.png') ;
+    background-size: contain; /* Hace que la imagen se ajuste completamente dentro del div */
+    background-position: left; /* Alinea la imagen a la derecha */
+    background-repeat: no-repeat;
+    
+}
+.div-categories{
+    background-color: #ccc;
+    min-height: 0;
+    height: fit-content;
+    width: 20vw;
+}
+.div-cat{
+    width: 90%;
+}
+.butt-categories{
+    background-color: transparent ;
+    border:none;
+    width: 75%;
+    text-align: left;
+}

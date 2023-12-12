@@ -1,0 +1,42 @@
+
+.div-options{
+    min-height: fit-content;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.sub-div-options{
+    padding: 4px;
+    background-color: white;
+    flex-direction: column;
+    width: 140px;
+    min-height: fit-content;
+    border-radius:20px;
+    margin:-5px auto;
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    z-index: 100;
+}
+.butt-option{
+    border-radius:50px ;
+    z-index: inherit;
+}
+.hr-options{
+    box-shadow: none;
+    width: 97%;
+    margin: 0;
+    color:black
+}
+.butt-options{
+width: 90%;
+margin: 3px !important;
+border: none;
+border-bottom: 1px solid #ccc;
+background-color:transparent;
+}
+.cont-options{
+    width: fit-content;
+    position: relative;
+}
