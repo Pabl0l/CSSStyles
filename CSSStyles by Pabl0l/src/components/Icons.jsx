@@ -1,7 +1,7 @@
 import './css/icons.css'
 const Icons = () => {
     return(
-        <div className="cont cont-hijo-icons">
+        <div className="cont cont-hijo-icons" id='icons'>
         <h2 className="h2 h2-icons">Icons</h2>
         <div className="div div-icons">
             <img className="button-icon" src="/facebook.png" alt="" />

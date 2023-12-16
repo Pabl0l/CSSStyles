@@ -7,6 +7,7 @@ const Bar = () => {
   const [toggleMenuOptions, setToggleMenuOptions] = useState(false);
   const [isFav, setIsFav] = useState(false);
   const [toggleButton,setToggleButton]=useState(false)
+  const [texto, setTexto] = useState("");
 
   const menuAnimation = useSpring({
       opacity: toggleMenu ? 1 : 0,
@@ -21,7 +22,7 @@ const Bar = () => {
       transform: `scale(${toggleButton ? 1 : 0})`,
     });
 
-    
+   const handleInputChange = (e) => setTexto(e.target.value)
 
 
     const handleButton = () => {
@@ -43,7 +44,7 @@ const handleToggleOptions = () => {
 
   
     return(
-        <div className="cont cont-hijo-bar">
+        <div className="cont cont-hijo-bar" id='bar'>
                     
                     <h2 className="h2 h2-bar">Bar</h2>
                    
@@ -59,7 +60,7 @@ const handleToggleOptions = () => {
                        
                         <div className='divbar div-search-bar'>
                        
-                                        <input  className='search-bar-input' type="text" />
+                                        <input  className='search-bar-input' type="text" placeholder='Introduce algo' onChange={handleInputChange} />
                        
                                         <button className='butt butt-search'> <img className='butt-img search-bar-img' src="/search.png" alt="" /> </button>
                        
@@ -116,7 +117,7 @@ const handleToggleOptions = () => {
                         </div>
                             </div>
                         </div>
-
+                            <h2 className='h2 h2-texto'> {texto} </h2>
                     </div>
                 </div>
     )

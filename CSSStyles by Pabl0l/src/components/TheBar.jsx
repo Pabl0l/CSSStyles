@@ -1,52 +1,54 @@
+// import { useSpring, animated } from 'react-spring';
 import './css/TheBar.css'
 import './css/Options.css'
-import { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
-import { Link } from 'react-router-dom';
+import TheCategories from './TheCategories.jsx'
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
 const TheBar = () => {
-    const [toggleMenu, setToggleMenu] = useState(false);
-    const [toggleMenuOptions, setToggleMenuOptions] = useState(false);
-    const [isFav, setIsFav] = useState(false);
-    const [toggleButton,setToggleButton]=useState(false)
+    const [CVW, setCVW] = useState(window.innerWidth > 800);
+    // const [toggleMenuOptions, setToggleMenuOptions] = useState(false);
+    // const [toggleButton,setToggleButton]=useState(false)
+    const {pathname} = useLocation()
 
-
-    const menuAnimation = useSpring({
-        opacity: toggleMenu ? 1 : 0,
-        transform: `scale(${toggleMenu ? 1 : 0})`,
-      });
-    const menuAnimationOptions = useSpring({
-        opacity: toggleMenuOptions ? 1 : 0,
-        transform: `scale(${toggleMenuOptions ? 1 : 0})`,
-      });
-    const optionsAnimation = useSpring({
-        opacity: toggleButton ? 1 : 0,
-        transform: `scale(${toggleButton ? 1 : 0})`,
-      });
-
-      const handleButton = () => {
-          setToggleButton(!toggleButton)
-      }
-
-      const handleFav = () => {
-        setIsFav(!isFav);
+    useEffect(() => {
+      const handleResize = () => {
+        setCVW(window.innerWidth > 800);
       };
+            window.addEventListener('resize', handleResize);
+            return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
 
-  const handleToggle = () => {
-    setToggleMenu(!toggleMenu);
-  };
+    // const menuAnimationOptions = useSpring({
+    //     opacity: toggleMenuOptions ? 1 : 0,
+    //     transform: `scale(${toggleMenuOptions ? 1 : 0})`,
+    //   });
+    // const optionsAnimation = useSpring({
+    //     opacity: toggleButton ? 1 : 0,
+    //     transform: `scale(${toggleButton ? 1 : 0})`,
+    //   });
 
-  const handleToggleOptions = () => {
-    setToggleMenuOptions(!toggleMenuOptions);
-    setToggleButton(false)
-  };
+    //   const handleButton = () => {
+    //       setToggleButton(!toggleButton)
+    //   }
+
+
+  // const handleToggleOptions = () => {
+  //   setToggleMenuOptions(!toggleMenuOptions);
+  //   setToggleButton(false)
+  // };
     return(
         <div className="div-thebar">
             <div className="sub-div-thebar">
                 
             <div className='divbar div-brand-thebar'>
-                            
-                            <h4 className="h4-thebar">CSS Styles by Pabl0l</h4>
-                        
+                            {CVW?
+                            <h4 className="h4-thebar">CSS Styles by Pabl0l</h4> : <h4 className='h4-thebar'>
+                                CSS3
+                            </h4>
+                        }
                         </div>
 
                         <div className='divbar div-button-bar'>
@@ -63,21 +65,11 @@ const TheBar = () => {
                    
                     <div className='divbar div-option-bar menu-bar'>
                    
-                    <div className="sub-div div-menu-vertical thebar-menu-opt menu-verti">
+                   
+                    {pathname ==="/landing"     &&      <TheCategories />}
 
-                  <button className="butt butt-thebar butt-menu-vertical " onClick={handleToggle}  >     {toggleMenu ? (<img className="butt-img " src="/menu-medio.png" alt="" />) : (  <img className="butt-img " src="/menu-vert.png" alt="" /> )}</button>
-
-                  {toggleMenu && (<div className="sub-div sub-div-menu-vertical "><animated.button style={menuAnimation} className="butt butt-thebar butt-menu" onClick={handleFav}>
-                        {isFav ? (<img className="butt-img " src="/corazon-blanco.png" alt="isFav" />) : (<img className="butt-img " src="/corazon-negro.png" alt="notFav" />)}</animated.button>
-
-               
-                      <animated.button  style={menuAnimation} className="butt butt-thebar butt-submit"><img className="butt-img " src="/dado.png" alt="" /></animated.button>
-
-                      <animated.button  style={menuAnimation} onClick={handleToggle} className="butt butt-thebar butt-cancel"> <img className="butt-img " src="/close.png" alt="" /> </animated.button>
-                                  </div>)}
-
-                  </div>
-                   <div className="sub-div div-menu-vertical thebar-menu-opt user-opti">
+                  
+                   {/* <div className="sub-div div-menu-vertical thebar-menu-opt user-opti">
 
                     <button className="butt butt-thebar butt-menu-vertical" onClick={handleToggleOptions}  ><img className='butt-img  img-option-bar' src="/settings.png" alt="option-bar" /></button>
 
@@ -108,7 +100,7 @@ const TheBar = () => {
                         <animated.button  style={menuAnimationOptions} onClick={handleToggleOptions} className="butt butt-thebar butt-cancel"> <img className="butt-img" src="/close.png" alt="" /> </animated.button>
                                     </div>)}
 
-                    </div>
+                    </div> */}
                         </div>
             </div>
         </div>

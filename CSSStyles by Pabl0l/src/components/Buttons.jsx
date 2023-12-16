@@ -12,7 +12,7 @@ const Buttons = () => {
     }
 
     return(
-        <div className="cont cont-hijo-buttons">
+        <div className="cont cont-hijo-buttons" id='buttons'>
         <h2 className="h2 h2-buttons">Buttons</h2>
         <div className="div div-buttons">
 

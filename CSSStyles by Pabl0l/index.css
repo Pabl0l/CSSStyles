@@ -12,6 +12,9 @@ body{
     position: relative;
     top:10.5dvh;
 }
+.Pabl0l{
+    font-family: 'Sometype Mono', monospace;
+}
 hr{
     position: relative;
     width: auto;
@@ -39,7 +42,6 @@ h1{
 }
 .h3{
     color:#22b455 ;
-    margin: auto;
     width: 80%;
     text-align: left;
     margin:0px auto
@@ -53,12 +55,16 @@ h1{
     align-items: center;
     display: flex;
     flex-direction: column;
+    background: #0022003d;
 }
 .h2-page{
-    font-size: 6rem;
+    font-size: 6em;
     box-shadow: none;
     text-align: left;
     border-radius: 0px;
+}
+.h2-mini{
+    font-size:4em ;
 }
 .cont-padre{
     text-align: center;
@@ -97,6 +103,7 @@ h1{
     margin:10px auto;
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 .float{
     z-index:999;

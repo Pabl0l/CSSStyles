@@ -9,7 +9,7 @@ const Options = () => {
 
 
     return(
-        <div className="cont cont-hijo-options">
+        <div className="cont cont-hijo-options" id='options'>
         <h2 className="h2 h2-options">Options</h2>
         <div className="div div-options">
             <div className='cont-options float'>
