@@ -1,0 +1,40 @@
+.theregister{
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100dvw;
+    height: 100dvh;
+    color: #22b544;
+}
+.div-theregister{
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30dvw;
+    height: fit-content;
+    padding: 20px;
+    background-color: #020402;
+    box-shadow: 0px 0px 12px 1px #22b544;
+}
+.butt-theregister-close{
+    position: absolute; 
+    top:0;
+    right: 0;
+    width: 8dvh;
+    height: 8dvh;
+}
+.input-tr{
+    border: none;
+    border-radius: 8px;
+    background-color: #020402;
+    color: #22b544;
+    width: 100%;
+    margin-bottom: 16px;
+}
