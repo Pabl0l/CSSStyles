@@ -50,7 +50,7 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
                 
                 <input className='input-tr' type="text" placeholder="username" name="username" value={formData.username} onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
                 
-                <input className='input-tr' type="text" placeholder="role" name="role" value={formData.role} onChange={(e) => setFormData({ ...formData, role: e.target.value })} />
+                <input className='input-tr' type="text" placeholder="role ex. Teacher, Admin, Web Dev..." name="role" value={formData.role} onChange={(e) => setFormData({ ...formData, role: e.target.value })} />
 
                 <input className='input-tr' type="password" placeholder="password" name="password" value={pass} onChange={handlePasswordChange} />
                 
