@@ -23,12 +23,10 @@ const TheBar = () => {
         <div className="div-thebar">
             <div className="sub-div-thebar">
                 
-            <div className='divbar div-brand-thebar'>
                             {CVW?
-                            <h4 className="h4-thebar">CSS Styles by Pabl0l</h4> : <h4 className='h4-thebar'>
-                                CSS3
-                            </h4>
-                        }
+                            <>
+            <div className='divbar div-brand-thebar'>
+                            <h4 className="h4-thebar">CSS Styles by Pabl0l</h4> 
                         </div>
 
                         <div className='divbar div-button-bar'>
@@ -53,7 +51,35 @@ const TheBar = () => {
                   
                    
                         </div>
+                            </>
+                        : 
+                             <>
+            <div className='divbar div-brand-thebar'>
+                            <h4 className="h4-thebar">CS3</h4> 
+                        </div>
+
+                        <div className='divbar div-button-bar'>
+                          <Link to="/">
+                            <button className='butt butt-thebar thome'></button>
+                          </Link>
+                          <Link to="/landing">
+                            <button className='butt butt-thebar tland' ></button>
+                          </Link>
+                          <Link to="/about">
+                            <button className='butt butt-thebar tabout' ></button>
+                          </Link>
+                        </div>
+                   
+                    <div className='divbar div-option-bar menu-bar'>
+                   
+                    {pathname ==="/landing"     &&      <TheCategories />}
+
+                     <TheUserOptions />
+                        </div>
+                            </>
+                      }
             </div>
+            
         </div>
     ) 
 }

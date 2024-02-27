@@ -1,89 +1,25 @@
 const {Router} = require('express')
 const Users= require('../models/Users.js')
+const getUsers= require('../controllers/getUsers.js')
+const getUserById = require('../controllers/getUserById.js')
+const postUser = require('../controllers/postUser.js')
+const putUser = require('../controllers/putUser.js')
+const deleteUser = require('../controllers/deleteUser.js')
+const upload = require('../controllers/multer.js')
+const uploadImage = require('../controllers/uploadImage.js')
 
 const router = Router()
 
-router.get('/users', async (req, res) => {
-try {
-    const users = await Users.findAll()
-    console.log( 'Aquí los users:' , users)
-    res.json(users)
-} catch (error) {
-    return res.status(500).json({ message:error.message})
-}
-})
+router.get('/users', getUsers)
 
-router.get('/users/:id',  async (req, res) => {
-    try {
-        const {id} = req.params
-        
-        const user = await Users.findOne({
-            where:{
-                id
-            }
-        })
-        
-        if (!user) res.status(404).json({ message:'no existe este user!'})
+router.get('/users/:id',  getUserById)
 
-        res.json(user)
-   } catch (error) {
-       return res.status(500).json({ message:error.message})
-   }
-})
+router.post('/users', postUser); // registrar un usuario
 
-router.post('/users', async (req, res) => {
-    try {
-      const { username, role, password } = req.body;
+router.post('/users/imageUpload', upload.single('imagen'), uploadImage) // upload an image
 
-  
-      const newUser = await Users.create({
-        username,
-        role,
-        password,
-      });
-  
-      console.log(newUser);
-      res.send('Creating new user');
-    } catch (error) {
-      return res.status(500).json({ message: error.message });
-    }
-  });
-  
+router.put('/users/:id', putUser)
 
-router.put('/users/:id', async (req, res) => {
-    try {
-        const {id} = req.params
-        const {username, role} = req.body
-        
-        const user = await Users.findByPk(id)
-        
-        user.username = username
-        user.role = role
-
-        await user.save()
-
-        res.json(user)
-    } catch (error) {
-        return res.status(500).json({ message:error.message})
-    }
-})
-
-router.delete('/users/:id', async (req, res) => {
-try {
-    
-    const {id} = req.params
-
-    await Users.destroy({
-        where:{
-            id
-        }
-    })
-
-    res.status(204)
-} catch (error) {
-    return res.status(500).json({ message:error.message})
-    
-}
-})
+router.delete('/users/:id', deleteUser);
 
 module.exports = router

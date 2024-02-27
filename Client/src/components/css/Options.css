@@ -7,7 +7,7 @@
 }
 .sub-div-options{
     padding: 4px;
-    background-color: white;
+    background-color: #ccc;
     flex-direction: column;
     width: 140px;
     min-height: fit-content;

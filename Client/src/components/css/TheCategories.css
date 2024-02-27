@@ -4,6 +4,8 @@
 .cat{
 background-image:url('../../../public/right.png');
 background-size: cover;
+filter: brightness(0) saturate(100%) invert(70%) sepia(87%) saturate(7566%) hue-rotate(135deg) brightness(92%) contrast(97%);
+border:none;
 }
 .hr-cat{
     width: 100%;
@@ -31,4 +33,5 @@ background-size: cover;
     position: absolute;
     top:100%;
     right: 0%;
+    background: #000000c4;
 }

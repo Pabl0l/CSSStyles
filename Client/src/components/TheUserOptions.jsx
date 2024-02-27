@@ -10,6 +10,7 @@ const TheUserOptions = () => {
     const [userData, setUserData] = useState({
         username: "Invited",
         role: "",
+        imagen:""
     })
     const handleList = () => {
         setIsOpen(!isOpen)
@@ -35,28 +36,22 @@ const TheUserOptions = () => {
         })
     }
 
-    // const handleEdit = () =>{
 
-    // } 
-    
+      const onLogin = async (username, password) => {
 
-    
-
-
-      const onLogin = (username, password) => {
-
-        axios.get(`http://localhost:3001/users`)
+        await axios.get(`http://localhost:3001/users`)
           .then(response => {
-            console.log(response.data);
+            console.log("onLogin:",response.data);
             const userOnLogin = response.data.find(user => user.username === username)
       
             if (userOnLogin) {
               if (userOnLogin.password === password) {
-                    console.log("Ingreso exitoso");
+                    console.log("Ingreso exitoso: ", username, userOnLogin.role, userOnLogin.imagen);
                     
                     setUserData({
                         username: username,
-                        role: userOnLogin.role
+                        role: userOnLogin.role,
+                        imagen:userOnLogin.imagen
                     })
                     
                     setOnLog(false)
@@ -81,12 +76,16 @@ const TheUserOptions = () => {
             <button className="butt butt-thebar butt-bar-tuo" onClick={handleList}></button>
             {isOpen&&
                              <div className="div-tuo float">
-{/*                                 <div className='div-cont-img-tuo'>
-                                    <div className='div-img-tuo'></div>
-                                </div> */}
+                                { userData.imagen &&
+                                <div className='div-cont-img-tuo'>
+                                    <div className='div-img-tuo'> 
+                                      <img className='div-img-user' src={userData.imagen} alt="" />
+                                      </div>
+                                </div> 
+                                      }
                                 <div className='det-tuo'>
-                                    <h3 className='h3-tuo'> {userData.username} </h3>
-                                   { userData.username === "Invited"   ?  null: <h3 className='h3-tuo'> {userData.role} </h3>}
+                                    <h3 className='h3-tuo'> {userData.username.split(' ')[0]} </h3>
+                                   { userData.username === "Invited"   ?  null: <h3 className='h3-tuo-role'> {userData.role} </h3>}
                                     
                                         {
                                             userData.username === "Invited"   ?   

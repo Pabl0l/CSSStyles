@@ -9,19 +9,34 @@
     overflow: hidden;
 }
 .h3-tuo{
-    width: 5em;
+    width: 100%;
+    margin: 30px auto 10px;
+    text-align: center;
+    font-size: 2em;
 }
+.h3-tuo-role{
+    width: 100%;
+    margin: 10px auto 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
 .div-img-tuo{
     background-image:url('../../../public/foto.png') ;
     background-size: cover;
     background-color: #ccc;
     width: 100%;
     height:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .butt-bar-tuo{
     background-image: url('../../../public/settings.png');
     background-size: cover;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(87%) saturate(7566%) hue-rotate(135deg) brightness(92%) contrast(97%);
+    border:none;
 }
 .div-tuo{
     box-shadow: 0px 0px 8px #22b455 ;
@@ -37,6 +52,7 @@
 }
 .butt-tuo{
     width: 100%;
+    margin: 0px !important;
     padding:0px 10px;
     background:transparent;
     color:#22b455;
@@ -44,6 +60,10 @@
 }
 .butt-tuo:hover{
     box-shadow: 0px 0px 8px #22b455 !important;
+}
+
+.div-img-user{
+    height: 100%;
 }
 
 .close-tuo{

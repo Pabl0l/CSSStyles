@@ -11,6 +11,7 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
         username: '',
         password: '',
         role:'',
+        imagen:null,
     });
 
 
@@ -21,21 +22,44 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
         name === 'password' ? setPass(value) : setConPass(value);
         setPasswordsMatch(name === 'password' ? value === conPass : pass === value);
     };
+       
+    const handleUpload = async (image) => {
+        const formData = new FormData();
+        formData.append('imagen', image);
 
+        console.log("fomrData:", formData)
+      
+        try {
+          const response = await axios.post('http://localhost:3001/users/imageUpload', formData);
+          if (response.data.success) {
+            console.log('Imagen subida con exito!');
+          } else {
+            console.log('Error al subir la imagen');
+          }
+        } catch (error) {
+          console.log('error en handleUpload: ',error);
+        }
+      };
 
-    const handleSubmit = async () => {
-        const jsonData = JSON.stringify(formData);
-    
-       await axios.post('http://localhost:3001/users', jsonData, {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => {
+      const handleChange = (e) => {
+        const imagen = (e.target.files[0]);
+        console.log("handleChange:", imagen)
+        handleUpload(imagen);
+      };
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        
+        await axios.post('http://localhost:3001/users', formData, {
+            headers: {
+                'Content-Type':'application/json'
+            }
+        })
+        .then(response => {
                 console.log('Respuesta del servidor:', response.data);
             })
             .catch(error => {
-                console.error('Error al enviar datos:', error);
+                console.error('Error al enviar datos en el registro:', error);
             });
             
             onLogoutClick()
@@ -47,25 +71,28 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
         <div className="theregister">
             <div className="div-theregister">
                 <h2>Register</h2>
-                
+                <form action="/users" method='POST' encType='multipart/form-data'>
+
                 <input className='input-tr' type="text" placeholder="username" name="username" value={formData.username} onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
                 
-                <input className='input-tr' type="text" placeholder="role ex. Teacher, Admin, Web Dev..." name="role" value={formData.role} onChange={(e) => setFormData({ ...formData, role: e.target.value })} />
+                <input className='input-tr' type="text" placeholder="role" name="role" value={formData.role} onChange={(e) => setFormData({ ...formData, role: e.target.value })} />
 
                 <input className='input-tr' type="password" placeholder="password" name="password" value={pass} onChange={handlePasswordChange} />
                 
                 <input className='input-tr' type="password" placeholder="confirm password" name="confirmPassword" value={conPass} onChange={handlePasswordChange} />
 
-                {/* <input className='input-tr' type="file" name="imagen" placeholder="Image"/> */}
+                <input className='input-file input-tr' type="file" name="imagen" placeholder="Imagen" onChange={handleChange}/>
 
                 {!passwordsMatch && <p style={{ color: 'red' }}>Las contraseñas no coinciden</p>}
 
                 <button className='butt butt-tr-register butt-accept' type="submit" onClick={handleSubmit} disabled={!passwordsMatch}>Register!</button>
             
+                </form>
             </div>
-                <button className='butt butt-theregister-close close-tuo butt-cancel' onClick={()=>onLogoutClick()}></button>
+                <button type='submit' className='butt butt-theregister-close close-tuo butt-cancel' onClick={()=>onLogoutClick()}></button>
         </div>
     );
 };
 
 export default TheRegister;
+

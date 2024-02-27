@@ -1,0 +1,130 @@
+.div-posts{
+    width: fit-content;
+    height: fit-content;
+    background-color: #ccc;
+    padding: 15px 0px;
+    position: relative;
+}
+.min-div-post{
+    background-color: #ccc;
+    margin: 16px auto;
+    display: flex;
+    border-radius: 26px;
+    overflow: hidden;
+    max-height: 75dvh;
+    width: 40dvw;
+}
+.img-autor{
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.h3-post-autor{
+    margin:0px;
+    margin-top: -12px;
+}
+.h3-post-released{
+    margin:0px;
+    font-weight: 100;
+    font-size:0.8em;
+    color:#000000db;
+    border-bottom: 1px solid #000000db;
+}
+.h3-post-desc{
+    margin:0px;
+    font-weight: 100;
+    font-size:0.8em;
+    color:#000000db;
+}
+.left-post{
+    flex:0.2;
+}
+.img-post-post{
+width: 100%;
+}
+.right-post{
+    flex:0.8;
+}
+.butt-comment{
+    background-image: url('../../../public/comment.png');
+    background-position:center ;
+    background-size: cover;
+    position: absolute;
+    background-color: transparent;
+    bottom: 0%;
+    left: 0%;
+    border:none;
+}
+.butt-thumb{
+    position: absolute;
+    bottom: -2%;
+    left: 8%;
+    width: 10%;
+    background-color: transparent;
+    border:none;
+}
+/*Mini*/
+
+.mini-div-post{
+    background-color: #ccc;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 26px;
+    overflow: hidden;
+    max-height: 75dvh;
+    width: 70dvw;
+}
+.up-post{
+    display: flex;
+}
+.mini-img-autor{
+    width: 20%;
+    margin: 10px 0px 10px 10px;
+    border-radius: 10px;
+}
+.div-autor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mini-h3-post-autor{
+    margin:0px;
+    margin-top: -12px;
+    font-size: 0.9em;
+  }
+  .mini-h3-post-released{
+    margin:0px;
+    font-weight: 100;
+    font-size:0.6em;
+    color:#000000db;
+}
+.mini-h3-post-desc{
+    margin-top:10px;
+    font-weight: 100;
+    font-size:0.8em;
+    color:#000000db;
+}
+.mini-input-commentsform {
+    resize: none;
+    border-radius: 16px;
+    width: 34dvh;
+  }
+  .mini-butt-comment {
+    background-image: url('/public/comment.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-color: transparent;
+    top: 40px;
+    right: 2%;
+    border: none;
+}
+.mini-butt-fav {
+    position: absolute;
+    top: 40px;
+    right: 19%;
+    background: transparent !important;
+    border: none;
+    width: 8dvh;
+  }

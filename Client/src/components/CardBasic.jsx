@@ -2,7 +2,7 @@ import './css/CardBasic.css';
 import {useState} from 'react'
 const CardBasic = () => {
 
-    const [Fav, setFav] = useState(false)
+    const [Fav, setFav] = useState(true)
 
     const handleFav = () => {
         setFav(!Fav)

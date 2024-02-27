@@ -3,12 +3,13 @@ const express = require('express');
 const cors = require('cors'); 
 const bodyParser = require('body-parser');
 const router = require('./src/routes/routes.js')
-
+const upload = require('./src/controllers/multer.js')
 const server = express()
 const port = 3001
 
 server.use(cors())
 
+server.set('view engine','ejs')
 
 server.use(bodyParser.json());
 
@@ -23,7 +24,6 @@ server.use(
         type: "/"
     })
 )
-
 
 
 server.use(express.json())

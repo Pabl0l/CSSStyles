@@ -60,7 +60,7 @@ const handleToggleOptions = () => {
                        
                         <div className='divbar div-search-bar'>
                        
-                                        <input  className='search-bar-input' type="text" placeholder='Introduce algo' onChange={handleInputChange} />
+                                        <input  className='search-bar-input' type="text" placeholder='type some thing' onChange={handleInputChange} />
                        
                                         <button className='butt butt-search'> <img className='butt-img search-bar-img' src="/search.png" alt="" /> </button>
                        

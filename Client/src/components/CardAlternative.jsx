@@ -2,7 +2,7 @@ import {useState} from 'react'
 import './css/CardAlternative.css'
 
 const CardAlternative = () => {
-    const [Fav, setFav] = useState(false)
+    const [Fav, setFav] = useState(true)
 
     const handleFav = () => {
         setFav(!Fav)

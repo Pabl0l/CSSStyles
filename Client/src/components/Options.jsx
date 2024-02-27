@@ -17,13 +17,9 @@ const Options = () => {
             {toggleButton?<div className="sub-div sub-div-options float">
                 <button className='butt butt-options'>Option 1</button>
                 <button className='butt butt-options'>Option 2</button>
-                <button className='butt butt-options'>Option 3</button>
-                <button className='butt butt-options'>Option 4</button>
-                <hr className='hr-options'/>
+               <hr className='hr-options'/>
                 <button className='butt butt-options'>A</button>
                 <button className='butt butt-options'>B</button>
-                <button className='butt butt-options'>C</button>
-                <button className='butt butt-options'>D</button>
                 <hr className='hr-options'/>
                 <button className='butt butt-options'> <img className='butt-img' src="/settings.png" alt="" /> </button>
                 <button onClick={()=>handleButton()} className='butt butt-options'> <img 

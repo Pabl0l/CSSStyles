@@ -2,18 +2,13 @@
 import './css/TheLogin.css';
 import { useState } from 'react';
 
-const TheRegister = ({onLogoutClick, onLogin}) => {
+const TheLogin = ({onLogoutClick, onLogin}) => {
     const [formData, setFormData] = useState({
         username: '',
         password: '',
         role:'',
+        image:null,
     });
-
-
-    // const handleImageChange = (e) => {
-    //     const file = e.target.files[0];
-    //     setFormData((prevData) => ({ ...prevData, image: file }));
-    // };
 
 
     const handleSubmit = () => {
@@ -37,4 +32,4 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
     );
 };
 
-export default TheRegister;
+export default TheLogin;

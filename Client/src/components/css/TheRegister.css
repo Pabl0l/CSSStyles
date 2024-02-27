@@ -38,3 +38,11 @@
     width: 100%;
     margin-bottom: 16px;
 }
+.input-file{
+    border: 1px solid #22b544 !important;
+    padding: 10px;
+    cursor: pointer;
+}
+.input-file::before{
+    content: "Seleccionar Archivo";
+}

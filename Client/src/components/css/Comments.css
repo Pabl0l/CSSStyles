@@ -1,0 +1,116 @@
+.div-comments{
+    min-height: 200px;
+}
+.div-comment{
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    position: relative;
+    max-width: 93dvh;
+}
+.autor-details{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width:15%;
+}
+.comment-details{
+    padding: 0px 12px;
+    display: flex;
+    flex: 1;
+}
+.div-released{
+    display: flex;
+    flex:0.1;
+}
+.released{
+    margin: -10px 8px;
+    padding-top: 15px;
+    font-weight: 100;
+    color: #0000007a;
+    font-size: 0.8em;
+}
+.username{
+    color: #000000db;
+    text-align: left;
+    font-size: 1.2em;
+    flex: 1;
+    cursor: pointer;
+    margin: 0px 4px;
+    font-size: 1em;
+    font-weight: 500;
+}
+.username:hover{
+    text-decoration: underline;
+}
+.div-post{
+    border-radius: 16px;
+    margin: auto;
+    overflow: hidden;
+}
+.img-post{
+    width: 100%;
+
+}
+.h3-comment{
+    text-align: center;
+}
+.h4-comment{
+    font-weight: 100;
+}
+.post-profile-link{
+    color:black;
+}
+/*comemnt form*/
+.div-commentsform{
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    height: fit-content;
+    min-height: 0;
+    max-width: fit-content;
+}
+.label-file{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+  }
+  .img-comments{
+    width: 9dvh;
+  border-radius: 16px;
+  margin-right: 7px;
+  }
+  .img-details{
+    margin:10px;
+    width: auto;
+    border-radius: 16px;
+    margin: 10px 0px 0px 10px;
+  }
+  .input-commentsform{
+    resize:none;
+    border-radius: 16px;
+  }
+  .div-input-image{
+      position: absolute;
+  top: 12%;
+  right: 5.5%;
+  }
+  .input-file{
+    border:1px solid #ccc;
+    appearance: none ;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.butt-commentsform{
+      position: absolute;
+      right: 1.9%;
+      bottom: 9%;
+  }
