@@ -22,10 +22,10 @@ const PostForm = () => {
         }
       };
     return(
-        <div className="cont-commentsform" id='comments'>
+        <section className="cont-commentsform" id='comments'>
         <h2 className="sub-h2 h2-commentsform">Post Form</h2>
-        <div className="sub-div div-commentsform">
-        <img className="img-comments" src="../public/girl-ad.jpg" alt="" />
+        <form className="sub-div div-commentsform">
+        <img className="img-comments" src="/girl-ad.jpg" alt="" />
               <textarea className="input-commentsform input-comment" type="text" onChange={handleInputChange} required rows="4" cols="50"  placeholder="What are you thinking about?"></textarea>
 
 
@@ -36,12 +36,12 @@ const PostForm = () => {
     
     
         <button className="butt butt-commentsform" type="reset" onClick={CommentUpload}>&rsaquo;</button>
-        </div>
+        </form>
         <Toaster
                                   position="bottom-right"
                                   reverseOrder={false}
                                    />
-</div>
+</section>
     )
 }
 export default PostForm

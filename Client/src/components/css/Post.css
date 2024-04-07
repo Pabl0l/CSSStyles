@@ -46,7 +46,7 @@ width: 100%;
     flex:0.8;
 }
 .butt-comment{
-    background-image: url('../../../public/comment.png');
+    background-image: url('/comment.png');
     background-position:center ;
     background-size: cover;
     position: absolute;

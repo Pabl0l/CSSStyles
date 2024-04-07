@@ -16,8 +16,8 @@ const TheLogin = ({onLogoutClick, onLogin}) => {
     };
     
     return (
-        <div className="theregister">
-            <div className="div-theregister">
+        <section className="theregister">
+            <form className="div-theregister">
                 <h2>Log In!</h2>
                 
                 <input className='input-tr' type="text" placeholder="username" name="username" value={formData.username} onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
@@ -26,9 +26,9 @@ const TheLogin = ({onLogoutClick, onLogin}) => {
 
                 <button className='butt butt-tr-register butt-accept' type="submit" onClick={handleSubmit}>Log In!</button>
             
-            </div>
+            </form>
                 <button className='butt butt-theregister-close close-tuo butt-cancel' onClick={()=>onLogoutClick()}></button>
-        </div>
+        </section>
     );
 };
 

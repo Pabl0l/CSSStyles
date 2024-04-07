@@ -22,7 +22,7 @@
 }
 
 .div-img-tuo{
-    background-image:url('../../../public/foto.png') ;
+    background-image:url('/foto.png') ;
     background-size: cover;
     background-color: #ccc;
     width: 100%;
@@ -33,7 +33,7 @@
 }
 
 .butt-bar-tuo{
-    background-image: url('../../../public/settings.png');
+    background-image: url('/settings.png');
     background-size: cover;
     filter: brightness(0) saturate(100%) invert(70%) sepia(87%) saturate(7566%) hue-rotate(135deg) brightness(92%) contrast(97%);
     border:none;
@@ -67,6 +67,6 @@
 }
 
 .close-tuo{
-    background-image: url('../../../public/close.png');
+    background-image: url('/close.png');
     background-size: cover;
 }

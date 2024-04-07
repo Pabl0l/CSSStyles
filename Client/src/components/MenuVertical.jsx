@@ -22,7 +22,7 @@ const MenuVertical = () => {
   };
 
   return (
-    <div className="cont cont-hijo-menu-vertical">
+    <section className="cont cont-hijo-menu-vertical">
       <h2 className="sub-h2 h2-menu-vertical">Menu vertical</h2>
       <div className="sub-div div-menu-vertical">
         <button className="butt butt-menu-vertical" onClick={handleToggle}  >
@@ -71,7 +71,7 @@ const MenuVertical = () => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

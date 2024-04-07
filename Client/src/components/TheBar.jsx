@@ -20,7 +20,7 @@ const TheBar = () => {
     }, []);
 
     return(
-        <div className="div-thebar">
+        <section className="div-thebar">
             <div className="sub-div-thebar">
                 
                             {CVW?
@@ -80,7 +80,7 @@ const TheBar = () => {
                       }
             </div>
             
-        </div>
+        </section>
     ) 
 }
 export default TheBar;

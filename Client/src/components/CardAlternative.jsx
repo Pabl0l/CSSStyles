@@ -8,7 +8,7 @@ const CardAlternative = () => {
         setFav(!Fav)
     }
 return (
-    <div className="sub-cont">
+    <section className="sub-cont">
                             <h2 className="sub-h2 h2-card-alternative">Card alternative</h2>
                             <div className="sub-div div-card-alternative">
                             <div className="div-card- div-ca">
@@ -26,7 +26,7 @@ return (
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 )
 }
 

@@ -3,13 +3,13 @@ import MenuHorizontal from './MenuHorizontal.jsx'
 import './css/Menu.css'
 const Menu = () => {
     return(
-        <div className="cont cont-hijo-menu" id='menu'>
+        <section className="cont cont-hijo-menu" id='menu'>
         <h2 className="h2 h2-menu">Menu</h2>
         <div className="div div-menu">
             <MenuVertical />
             <MenuHorizontal />
         </div>
-</div>
+</section>
     )
 }
 export default Menu

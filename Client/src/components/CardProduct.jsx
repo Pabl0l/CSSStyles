@@ -7,7 +7,7 @@ const CardProduct = () => {
         toast.success('successfully added to shopping cart (it`s just a toast)')
     }
 return (
-    <div className="sub-cont">
+    <section className="sub-cont">
                             <h2 className="sub-h2 h2-card-product">Card product</h2>
                             <div className="sub-div div-card-product">
                                 <div className="div-cp">
@@ -28,7 +28,7 @@ return (
                                   position="bottom-right"
                                   reverseOrder={false}
                                    />
-                        </div>
+                        </section>
 )
 }
 

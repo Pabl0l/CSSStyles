@@ -12,7 +12,7 @@ const Buttons = () => {
     }
 
     return(
-        <div className="cont cont-hijo-buttons" id='buttons'>
+        <section className="cont cont-hijo-buttons" id='buttons'>
         <h2 className="h2 h2-buttons">Buttons</h2>
         <div className="div div-buttons">
 
@@ -43,7 +43,7 @@ const Buttons = () => {
             <button className="butt butt-submit">Submit</button>
             <button className="butt butt-icon"> <img  className="butt-img" src="/CS3_trans.png" alt="" /> </button>
         </div>
-</div>
+</section>
     )
 }
 export default Buttons

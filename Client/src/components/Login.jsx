@@ -1,7 +1,7 @@
 import './css/Login.css'
 const Login = () =>{
     return(
-        <div className="sub-cont">
+        <section className="sub-cont">
                         <h2 className="sub-h2 h2-login">Login</h2>
                         <div className="sub-div div-login">
 
@@ -20,7 +20,7 @@ const Login = () =>{
 
 
                         </div>
-                    </div>
+                    </section>
     )
 }
 export default Login

@@ -15,7 +15,7 @@ const SimpleList = () => {
   }
 
   return (
-    <div className="sub-cont cont-hijo-simplelist">
+    <section className="sub-cont cont-hijo-simplelist">
       <h2 className="sub-h2 h2-simplelist h2-lists">Simple List</h2>
       <div className="sub-div div-simplelist column">
         <button className='butt butt-simplelist' onClick={handleList}>simpleList</button>
@@ -27,7 +27,7 @@ const SimpleList = () => {
           <button className='butt butt-simplelist' onClick={handleList}>Close</button>
         </animated.div>
       </div>
-    </div>
+    </section>
   )
 }
 

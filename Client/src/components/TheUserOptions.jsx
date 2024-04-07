@@ -70,7 +70,7 @@ const TheUserOptions = () => {
 
 
     return(
-        <>
+        <section>
         <div className="theuseroptions">
             
             <button className="butt butt-thebar butt-bar-tuo" onClick={handleList}></button>
@@ -107,7 +107,7 @@ const TheUserOptions = () => {
         </div>
         {registering &&<TheRegister onLogoutClick={onSubmitClick} onLogin={onLogin}/>}
         {onLog && <TheLogin onLogoutClick={onSubmitClick} onLogin={onLogin}/>}
-        </>
+        </section>
     )
 }
 export default TheUserOptions

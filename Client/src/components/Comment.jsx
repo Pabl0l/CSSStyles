@@ -9,12 +9,12 @@ const Comments = () => {
         setFav(!Fav)
     }
     return(
-        <div className="cont cont-hijo-comments" id='comments'>
+        <section className="cont cont-hijo-comments" id='comments'>
         <h2 className="h2 h2-comments">Comments</h2>
         <div className="div div-comments">
             <div className="div-comment">
                 <div className="autor-details">
-                <img className="img-details" src="../public/yo.jpeg" alt="" />
+                <img className="img-details" src="/yo.jpeg" alt="" />
                 <h3 className="h3-comment username"><a className="h3-comment username" href="https://github.com/Pabl0l" target='_blank' rel="noreferrer">@Pabl0l</a></h3>
                 </div>
                 <div className="comment-details">
@@ -28,7 +28,7 @@ const Comments = () => {
             </div>
         </div>
         <CommentForm/>
-</div>
+</section>
     )
 }
 export default Comments

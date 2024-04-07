@@ -33,7 +33,7 @@ const Landing = () => {
       }, []);
 
     return(
-        <div className="div div-landing">
+        <section className="div div-landing">
         <div className='cont cont-landing'>
         <div className="div-w">
           {CVW?
@@ -72,7 +72,7 @@ const Landing = () => {
             <hr />
             <Footer />
          </div>
-        </div>
+        </section>
     )
 }
 export default Landing

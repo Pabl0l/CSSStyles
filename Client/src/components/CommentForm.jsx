@@ -22,10 +22,10 @@ const CommentsForm = () => {
         }
       };
     return(
-        <div className="cont-commentsform" id='comments'>
+        <section className="cont-commentsform" id='comments'>
         <h2 className="sub-h2 h2-commentsform">Comments Form</h2>
         <div className="sub-div div-commentsform">
-        <img className="img-comments" src="../public/yo.jpeg" alt="" />
+        <img className="img-comments" src="/yo.jpeg" alt="" />
               <textarea className="input-commentsform input-comment" type="text" onChange={handleInputChange} required rows="4" cols="50"  placeholder="Type comments here!"></textarea>
 
 
@@ -41,7 +41,7 @@ const CommentsForm = () => {
                                   position="bottom-right"
                                   reverseOrder={false}
                                    />
-</div>
+</section>
     )
 }
 export default CommentsForm

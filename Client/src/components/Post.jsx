@@ -42,7 +42,7 @@ const Post = () => {
       };
     }, []);
     return(
-        <div className="cont cont-hijo-post" id='post'>
+        <section className="cont cont-hijo-post" id='post'>
         <h2 className="h2 h2-post">Post</h2>
         <div className="div div-post">
         <div className="div div-posts">
@@ -50,7 +50,7 @@ const Post = () => {
            <>
             <div className="min-div-post">
                 <div className='left-post'>
-                <img className="img-autor" src="../public/girl-ad.jpg" alt="../public/girl-ad.jpg" />
+                <img className="img-autor" src="/girl-ad.jpg" alt="/girl-ad.jpg" />
                 <h3 className="h3-post-autor"><a className="h3-comment username" href="https://github.com/Pabl0l" target='_blank' rel="noreferrer">@Pabl0l</a></h3>
                     <h3 className='h3-post-released'>26/02/2024</h3>
                     <h3 className='h3-post-desc'>Last night with new European friends.</h3>
@@ -58,14 +58,14 @@ const Post = () => {
                 <button className='butt butt-thumb' onClick={handleFav}> {Fav? <img className='img-fav' src="/thumb-up.png" alt="" />: <img className='img-fav' src="/thumb-up-negro.png" alt="" /> }</button>
                 </div>
                 <div className='right-post'>
-                <img className="img-post-post" src="../public/spaceparty.jpg" alt="" />
+                <img className="img-post-post" src="/spaceparty.jpg" alt="" />
                 </div>
             
             </div>
-            {com?
-            <>
+            {com&&
+            <form>
              <div className="sub-div div-commentsform">
-        <img className="img-comments" src="../public/yo.jpeg" alt="" />
+        <img className="img-comments" src="/yo.jpeg" alt="" />
               <textarea className="input-commentsform input-comment" type="text" onChange={handleInputChange} required rows="4" cols="50"  placeholder="Type comments here!"></textarea>
 
 
@@ -77,35 +77,32 @@ const Post = () => {
     
         <button className="butt butt-commentsform" type="reset" onClick={CommentUpload}>&rsaquo;</button>
         </div>
-        <Toaster
-                                  position="bottom-right"
-                                  reverseOrder={false}
-                                   />
-                                   </>
-            :
-            null}
+        <Toaster position="bottom-right" reverseOrder={false}/>
+                                   
+                                   </form>
+            }
             </>
                 :
                 <>
             <div className="mini-div-post">
                 <div className='up-post'>
-                <img className="mini-img-autor" src="../public/yo.jpeg" alt="../public/yo.jpeg" />
+                <img className="mini-img-autor" src="/yo.jpeg" alt="yo.jpeg" />
                     <div className='div-autor'>
                 <h3 className="mini-h3-post-autor"><a className="h3-comment username" href="https://github.com/Pabl0l" target='_blank' rel="noreferrer">@Pabl0l</a></h3>
                     <h3 className='mini-h3-post-released'>26/02/2024</h3>
                     </div>
                 </div>
                 <div className='down-post'>
-                <img className="img-post-post" src="../public/spaceparty.jpg" alt="" />
+                <img className="img-post-post" src="/spaceparty.jpg" alt="" />
                 </div>
                 <button className='butt mini-butt-fav' onClick={handleFav}> {Fav? <img className='img-fav' src="/thumb-up.png" alt="" />: <img className='img-fav' src="/thumb-up-negro.png" alt="" /> }</button>
                 <button className='butt mini-butt-comment' onClick={handleCom}></button>
                     <h3 className='mini-h3-post-desc'>Last night with new European friends.</h3>
             </div>
-            {com?
-            <>
+            {com&&
+            <form>
              <div className="sub-div div-commentsform">
-        <img className="img-comments" src="../public/yo.jpeg" alt="" />
+        <img className="img-comments" src="/yo.jpeg" alt="" />
               <textarea className="mini-input-commentsform input-comment" type="text" onChange={handleInputChange} required rows="4" cols="50"  placeholder="Type comments here!"></textarea>
 
 
@@ -121,15 +118,13 @@ const Post = () => {
                                   position="bottom-right"
                                   reverseOrder={false}
                                    />
-                                   </>
-            :
-            null}
+                                   </form>}
                 </>
 }
         </div>
         </div>
         <PostForm/>
-</div>
+</section>
     )
 }
 export default Post

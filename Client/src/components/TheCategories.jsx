@@ -12,7 +12,7 @@ const TheCategories = () => {
         });
       };
     return(
-        <div className="thecategories">
+        <section className="thecategories">
             <button className="butt cat butt-thebar butt-thecat" onClick={handleList}></button>
             {isOpen&&
                              <div className="div-thecat float">
@@ -54,7 +54,7 @@ const TheCategories = () => {
                                         </Link>
                              </div>
            }
-        </div>
+        </section>
     )
 }
 export default TheCategories

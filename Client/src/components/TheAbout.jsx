@@ -16,7 +16,7 @@ const TheAbout = () =>{
 
 
     return(
-        <div className="cont cont-about">
+        <article className="cont cont-about">
             {CVW?
                 <div className="div div-about div-w">
             <div className='div-detalles-about divabt'>
@@ -52,7 +52,7 @@ const TheAbout = () =>{
                             </div>
                             </div>
             }     
-        </div>
+        </article>
     )
 }
 

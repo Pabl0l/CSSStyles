@@ -44,7 +44,7 @@ const handleToggleOptions = () => {
 
   
     return(
-        <div className="cont cont-hijo-bar" id='bar'>
+        <section className="cont cont-hijo-bar" id='bar'>
                     
                     <h2 className="h2 h2-bar">Bar</h2>
                    
@@ -119,7 +119,7 @@ const handleToggleOptions = () => {
                         </div>
                             <h2 className='h2 h2-texto'> {texto} </h2>
                     </div>
-                </div>
+                </section>
     )
 }
 export default Bar

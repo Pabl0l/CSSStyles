@@ -23,7 +23,7 @@ const MenuHorizontal = () => {
   };
 
   return (
-    <div className="cont cont-hijo-menu-horizontal">
+    <section className="cont cont-hijo-menu-horizontal">
       <h2 className="sub-h2 h2-menu-horizontal">Menu Horizontal</h2>
       <div className="sub-div div-menu-horizontal">
         <button
@@ -85,7 +85,7 @@ const MenuHorizontal = () => {
           </animated.div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

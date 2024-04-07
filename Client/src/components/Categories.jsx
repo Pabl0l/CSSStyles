@@ -15,7 +15,7 @@ const Categories = () => {
   }
 
   return (
-    <div className="sub-cont cont-hijo-categories">
+    <section className="sub-cont cont-hijo-categories">
       <h2 className="sub-h2 h2-categories h2-list">categories</h2>
       <div className="sub-div div-categories column">
         <button className='butt butt-categories butt-cat' onClick={handleList}></button>
@@ -28,7 +28,7 @@ const Categories = () => {
           <button className='butt butt-categories' onClick={handleList}>Close</button>
         </animated.div>}
       </div>
-    </div>
+    </section>
   )
 }
 

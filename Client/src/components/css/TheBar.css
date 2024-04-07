@@ -46,17 +46,20 @@
     display: flex;
 }
 .thome{
-background-image: url('../../../public/home.png');
+background-image: url('/home.png');
 background-size: cover;
   filter: brightness(0) saturate(100%) invert(70%) sepia(87%) saturate(7566%) hue-rotate(135deg) brightness(92%) contrast(97%);
 }
 .tland{
-background-image: url('../../../public/css.png');
+background-image: url('/css.png');
 background-size: cover;
   filter: brightness(0) saturate(100%) invert(70%) sepia(87%) saturate(7566%) hue-rotate(135deg) brightness(92%) contrast(97%);
 }
 .tabout{
-    background-image: url('../../../public/i.png');
+    background-image: url('/i.png');
     background-size: cover;
   filter: brightness(0) saturate(100%) invert(70%) sepia(87%) saturate(7566%) hue-rotate(135deg) brightness(92%) contrast(97%);
+}
+.butt-thebar:focus, .butt-thebar:focus-visible{
+    outline: none;
 }

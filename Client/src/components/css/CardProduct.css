@@ -1,5 +1,5 @@
 .product-img{
-    background-image: url('../../../public/pom-logo.jpg');
+    background-image: url('/pom-logo.jpg');
     background-size: cover;
     background-position: 50%;
     width: 100%;

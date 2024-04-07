@@ -1,7 +1,7 @@
 import './css/Footer.css'
 const Footer = () => {
     return(
-        <div className="cont cont-hijo-footer" id='footer'>
+        <footer className="cont cont-hijo-footer" id='footer'>
         <h2 className="h2 h2-footer">Footer</h2>
         <div className="div div-footer">
         <div className="div-head">
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         </div>
         </div>
-</div>
+</footer>
     )
 }
 export default Footer

@@ -31,15 +31,15 @@
     color:purple;
 }
 .linkedin{
-    background-image: url('../../../public/linkedin.png');
+    background-image: url('/linkedin.png');
     
 }
 .instagram{
-    background-image: url('../../../public/instagram.png');
+    background-image: url('/instagram.png');
     
 }
 .github{
-    background-image: url('../../../public/github.png');
+    background-image: url('/github.png');
     
 }
 .div-img-abt-cont{
@@ -47,7 +47,7 @@
     height: 90%;   
   }
 .div-img-theabout{
-    background-image:url('../../../public/yo.jpeg');
+    background-image:url('/yo.jpeg');
     background-size:cover ;
     background-position-x:100% ;
     width:  100%;

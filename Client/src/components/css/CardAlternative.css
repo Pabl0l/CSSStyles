@@ -9,7 +9,7 @@
     position: relative;
 }
 .div-img-ca{
- background-image: url('../../../public/space-ape.jpg');
+ background-image: url('/space-ape.jpg');
  background-size: cover;
  background-position:top;
  width: 100%;

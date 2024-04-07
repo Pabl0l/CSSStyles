@@ -3,7 +3,7 @@
     
 }
 .butt-cat{
-    background-image:url('../../../public/categories.png') ;
+    background-image:url('/categories.png') ;
     background-size: contain; /* Hace que la imagen se ajuste completamente dentro del div */
     background-position: left; /* Alinea la imagen a la derecha */
     background-repeat: no-repeat;

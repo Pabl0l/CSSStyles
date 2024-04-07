@@ -20,7 +20,7 @@ const Register = () => {
   };
 
     return (
-        <div className="sub-cont">
+        <section className="sub-cont">
                         <h2 className="sub-h2 h2-register">Register</h2>
                         <div className="sub-div div-register">
                         <div className="register-container">
@@ -54,7 +54,7 @@ const Register = () => {
                                     </form>
                             </div>
                         </div>
-                    </div>
+                    </section>
     )
 }
 

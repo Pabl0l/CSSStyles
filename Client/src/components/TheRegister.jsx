@@ -68,7 +68,7 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
     };
     
     return (
-        <div className="theregister">
+        <section className="theregister">
             <div className="div-theregister">
                 <h2>Register</h2>
                 <form action="/users" method='POST' encType='multipart/form-data'>
@@ -90,7 +90,7 @@ const TheRegister = ({onLogoutClick, onLogin}) => {
                 </form>
             </div>
                 <button type='submit' className='butt butt-theregister-close close-tuo butt-cancel' onClick={()=>onLogoutClick()}></button>
-        </div>
+        </section>
     );
 };
 

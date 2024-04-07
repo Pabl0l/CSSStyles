@@ -28,7 +28,7 @@
 }
 
 .div-about-img{
-    background-image: url('../../../public/olivia-power.png');
+    background-image: url('/olivia-power.png');
     background-position:cover ;
     border-radius: 30px;
     padding:10px;
